@@ -12,9 +12,11 @@ for (let i = 0; i < pokemonList.length; i++) {
     document.write(pokemonList[i].name + " ");
     document.write("(height: " + pokemonList[i].height + ") ")
     document.write("- Wow, that’s big! ");
+    document.write("</br>")
     } else {
       document.write(pokemonList[i].name + " ");
       document.write("(height: " + pokemonList[i].height + ") ")
+      document.write("</br>")
     }
   }
 
