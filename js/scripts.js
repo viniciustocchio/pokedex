@@ -8,15 +8,13 @@ let pokemonList = [
 ];
 
 for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].height > 0.5){
     document.write(pokemonList[i].name + " ");
     document.write("(height: " + pokemonList[i].height + ") ")
+    document.write("- Wow, that’s big! ");
+    } else {
+      document.write(pokemonList[i].name + " ");
+      document.write("(height: " + pokemonList[i].height + ") ")
+    }
   }
-  // document.write(pokemonList[i].name || pokemonList[i].height)
-  // if (person[i].age <19 && person[i].age >13){
-  //   console.log(person[i].name + " is a teenager");
-  // }else if (person[i].age <13){
-  //   console.log(person[i].name + " is a child");
-  // }else {
-  //   console.log(person[i].name + " is an adult");
-  // }
 
