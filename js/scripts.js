@@ -13,6 +13,7 @@ for (let i = 0; i < pokemonList.length; i++) {
     document.write("(height: " + pokemonList[i].height + ") ")
     document.write("- Wow, that’s big! ");
     document.write("</br>")
+    // added br to brak the line
     } else {
       document.write(pokemonList[i].name + " ");
       document.write("(height: " + pokemonList[i].height + ") ")
