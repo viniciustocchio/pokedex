@@ -1,13 +1,11 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
     if (typeof pokemon === "object" && "name" in pokemon) {
       pokemonList.push(pokemon);
-    } else {
-      console.log("pokemon is not correct");
-    }
+    } 
   }
   function getAll() {
     return pokemonList;
@@ -37,7 +35,6 @@ let pokemonRepository = (function () {
   }
   function hideLoadingMessage() {
     loadingMessage.remove();
-    console.log("Loading complete");
   }
 
   function loadList() {
@@ -57,7 +54,6 @@ let pokemonRepository = (function () {
           };
          
           add(pokemon);
-          console.log(pokemon);
         });
       })
       .catch(function (e) {
@@ -99,9 +95,9 @@ let pokemonRepository = (function () {
   }
 
   function showModal(item) {
-    let modalBody = $(".modal-body");
-    let modalTitle = $(".modal-title");
-    let modalHeader = $(".modal-header");
+    let modalBody = $("#modal-body");
+    let modalTitle = $("#modal-title");
+    let modalHeader = $("#modal-header");
     
     modalTitle.empty();
     modalBody.empty();
