@@ -1,3 +1,5 @@
+[![shield javascript](https://img.shields.io/badge/viniciustocchio-JavaScript-yellow)](https://github.com/viniciustocchio/pokedex)
+
 # Pokédex App
 ***
 ## Introduction
@@ -9,7 +11,7 @@ The Pokédex is a small web application with HTML, CSS, and JavaScript that load
 ---
 * `HTML`
 * `CSS`
-* `Javascript`
+* `JavaScript`
 * `Bootstrap`
 * `Fetch polyfill`
 * `Promise polyfill`
